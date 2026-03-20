@@ -1,0 +1,41 @@
+[workspace]
+name = "WHCA_UFFFS_Model"
+version = "1.0.0"
+description = "WHCA UFFFS Workshop Environment"
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64"]
+
+[dependencies]
+python = "*"
+pip = "*"
+xarray = "*"
+numpy = "*"
+pandas = "*"
+rasterio = "*"
+pyproj = "*"
+shapely = "*"
+matplotlib-base = "*"
+dask-core = "*"
+netcdf4 = "*"
+pyyaml = "*"
+cartopy = "*"
+hydromt = ">=0.9,<0.10"
+hydromt_sfincs = ">=1.0,<1.1"
+jupyterlab = "*"
+ipykernel = "*"
+rioxarray = "*"
+geopandas = "*"
+pysteps = "*"
+pillow = "*"
+openpyxl = "*"
+
+[environments]
+default = { solve-group = "default" }
+
+[tasks]
+postinstall = "setup-kernel"
+setup-kernel = "python -m ipykernel install --user --name whca_ufffs_model --display-name 'W@HCA_UFFFS_Model (pixi)'"
+notebook = "jupyter lab"
+list-kernels = "jupyter kernelspec list"
+clean-kernel = "jupyter kernelspec remove -f whca_ufffs_model || echo 'Kernel not found'"
+

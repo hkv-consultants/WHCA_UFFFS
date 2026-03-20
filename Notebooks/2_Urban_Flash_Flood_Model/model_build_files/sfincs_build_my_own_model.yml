@@ -1,0 +1,63 @@
+# HydroMT SFINCS build configuration
+# ====================================
+# Compatible with: hydromt_east_africa_sfincs.yml data catalog
+
+global:
+  data_libs: []  # main catalog is passed via -d flag
+
+# 1. SFINCS configuration (written to sfincs.inp)
+setup_config:
+  tref: "20100201 000000"       # reference time - CHANGE TO YOUR PERIOD
+  tstart: "20100201 000000"     # simulation start - CHANGE TO YOUR PERIOD
+  tstop: "20100202 000000"      # simulation end   - CHANGE TO YOUR PERIOD
+  dtout: 3600                   # output time step [s]
+  dtmaxout: 86400               # max output time step [s]
+
+# 2. Grid setup: creates computational grid from the region GeoJSON
+setup_grid_from_region:
+  res: 30                       # grid resolution [m]
+  crs: "utm"                    # auto-detect UTM zone from region
+  rotated: True                 # allow rotated grid for optimal coverage
+
+# 3. Elevation
+setup_dep:
+  datasets_dep:
+    - elevtn: copernicus_dem_30m
+      zmin: 0.001
+    - elevtn: merit_hydro       # fallback where Copernicus has gaps
+
+# 4. Active mask: defines which grid cells are used in computation
+setup_mask_active:
+  zmin: -5                      # cells below -5 m elevation set to inactive
+  reset_mask: True
+
+# 5. Boundary conditions mask
+setup_mask_bounds:
+  btype: waterlevel             # set waterlevel boundaries
+  zmax: -1                      # only cells below -1 m can be waterlevel boundaries
+
+# 6. Subgrid tables
+setup_subgrid:
+  datasets_dep:
+    - elevtn: copernicus_dem_30m
+      zmin: 0.001
+    - elevtn: merit_hydro
+  datasets_rgh:
+    - lulc: esa_worldcover_2021
+      reclass_table: esa_worldcover_2021_mapping
+  nr_subgrid_pixels: 2
+  manning_land: 0.04
+  manning_sea: 0.02
+
+# 7. Manning roughness: spatially varying from land use
+setup_manning_roughness:
+  datasets_rgh:
+    - lulc: esa_worldcover_2021
+      reclass_table: esa_worldcover_2021_mapping
+  manning_land: 0.04
+  manning_sea: 0.02
+
+# 8. Infiltration: curve numbers based on soil type and antecedent moisture
+setup_cn_infiltration:
+  cn: gcn250
+  antecedent_moisture: "avg"
