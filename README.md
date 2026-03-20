@@ -1,4 +1,4 @@
-<![CDATA[<p align="center">
+<p align="center">
   <img src="logos.png" alt="Water at the Heart of Climate Action — Ministry of Foreign Affairs of the Netherlands — World Meteorological Organization — HKV — Deltares" width="800"/>
 </p>
 
@@ -29,11 +29,11 @@ As part of WHCA, [**HKV**](https://www.hkv.nl/en/) and [**Deltares**](https://ww
 
 | Country | City |
 |---|---|
-| 🇪🇹 Ethiopia | Dire Dawa |
-| 🇷🇼 Rwanda | *(to be confirmed)* |
-| 🇸🇸 South Sudan | *(to be confirmed)* |
-| 🇸🇩 Sudan | *(to be confirmed)* |
-| 🇺🇬 Uganda | *(to be confirmed)* |
+| 🇪🇹 Ethiopia | Addis Abeba *(to be confirmed)*   |
+| 🇷🇼 Rwanda | Kigali |
+| 🇸🇸 South Sudan | Juba |
+| 🇸🇩 Sudan | Khartoum |
+| 🇺🇬 Uganda | Kampala |
 
 Urban flash floods are among the most dangerous and challenging natural hazards in rapidly urbanising African cities. They occur within hours of extreme rainfall, develop very locally, and often strike low-income and informal settlements the hardest. The UFFFS combines real-time satellite rainfall observation, nowcasting, and hydrodynamic flood modelling into an end-to-end early warning chain — all built on open-source tools and openly available data, so that national meteorological and hydrological services can operate and maintain the system independently.
 
@@ -309,11 +309,10 @@ For questions about the workshop material, data access, or the WHCA UFFFS progra
 
 ## License
 
-This repository is released under the [CC0 1.0 Universal](LICENSE) public domain dedication. You can copy, modify, and distribute the material, even for commercial purposes, without asking permission.
+This repository is released under the [CC0 1.0 Universal](LICENSE) public domain dedication. You can copy, modify, and distribute the material.
 
 ---
 
 <p align="center">
   <sub>Developed by <a href="https://www.hkv.nl/en/">HKV</a> and <a href="https://www.deltares.nl/en">Deltares</a> for the <a href="https://wmo.int/">World Meteorological Organization</a> as part of the Water at the Heart of Climate Action programme, funded by the Ministry of Foreign Affairs of the Netherlands.</sub>
 </p>
-]]>
