@@ -29,11 +29,11 @@ As part of WHCA, [**HKV**](https://www.hkv.nl/en/) and [**Deltares**](https://ww
 
 | Country | City |
 |---|---|
-| 🇪🇹 Ethiopia | Dire Dawa |
-| 🇷🇼 Rwanda | *(to be confirmed)* |
-| 🇸🇸 South Sudan | *(to be confirmed)* |
-| 🇸🇩 Sudan | *(to be confirmed)* |
-| 🇺🇬 Uganda | *(to be confirmed)* |
+| 🇪🇹 Ethiopia | Addis Abeba *(to be confirmed)*   |
+| 🇷🇼 Rwanda | Kigali |
+| 🇸🇸 South Sudan | Juba |
+| 🇸🇩 Sudan | Khartoum |
+| 🇺🇬 Uganda | Kampala |
 
 Urban flash floods are among the most dangerous and challenging natural hazards in rapidly urbanising African cities. They occur within hours of extreme rainfall, develop very locally, and often strike low-income and informal settlements the hardest. The UFFFS combines real-time satellite rainfall observation, nowcasting, and hydrodynamic flood modelling into an end-to-end early warning chain — all built on open-source tools and openly available data, so that national meteorological and hydrological services can operate and maintain the system independently.
 
