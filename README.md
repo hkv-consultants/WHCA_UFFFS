@@ -1,4 +1,4 @@
-<![CDATA[<p align="center">
+<p align="center">
   <img src="logos.png" alt="Water at the Heart of Climate Action — Ministry of Foreign Affairs of the Netherlands — World Meteorological Organization — HKV — Deltares" width="800"/>
 </p>
 
@@ -309,11 +309,10 @@ For questions about the workshop material, data access, or the WHCA UFFFS progra
 
 ## License
 
-This repository is released under the [CC0 1.0 Universal](LICENSE) public domain dedication. You can copy, modify, and distribute the material, even for commercial purposes, without asking permission.
+This repository is released under the [CC0 1.0 Universal](LICENSE) public domain dedication. You can copy, modify, and distribute the material.
 
 ---
 
 <p align="center">
   <sub>Developed by <a href="https://www.hkv.nl/en/">HKV</a> and <a href="https://www.deltares.nl/en">Deltares</a> for the <a href="https://wmo.int/">World Meteorological Organization</a> as part of the Water at the Heart of Climate Action programme, funded by the Ministry of Foreign Affairs of the Netherlands.</sub>
 </p>
-]]>
