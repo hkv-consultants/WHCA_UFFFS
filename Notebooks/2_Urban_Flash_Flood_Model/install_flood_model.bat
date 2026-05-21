@@ -1,6 +1,6 @@
 @echo off
 echo ============================================================
-echo   WHCA UFFFS - Environment Setup
+echo   CREWS UFFFS Nowcast - Environment Setup
 echo ============================================================
 echo.
 
