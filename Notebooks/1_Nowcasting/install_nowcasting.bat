@@ -44,7 +44,7 @@ echo ============================================================
 echo   Setup complete!
 echo.
 echo   To start Jupyter Lab, run:
-echo     pixi run notebook
+echo     start_nowcasting.bat
 echo ============================================================
 echo.
 pause
